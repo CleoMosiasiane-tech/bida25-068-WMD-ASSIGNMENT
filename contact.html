@@ -9,46 +9,70 @@
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sm">
+        <nav class="navbar navbar-expand-lg shadow sm">
             <div class="container">
-            <a class="navbar-brand" href="index.html">Our Bakery</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <il class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </il>
-                </ul>
+                <a class="navbar-brand fw-bold" href="index.html">Salted Butter Bakery</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="product.html">Our Products</a>
+                      </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="order.html">Order Confirmation</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="feedback.html">Feedback</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact Us</a>
+                      </li>
+                   </ul>
+                </div>
             </div>
-        </div>
-
         </nav>
     </header>   
-    <main class="container my-5">
-        <h2>OPENING HOURS🕑</h2>
-        <p>Monday - Friday    (08:30am - 18:00pm)    Saturday    (08:30 - 12:00pm)    We do not open on sundays.</p>
-        <h3> LOCATION📍</h4>
-        <p>Block 5 Plot Number 6735</p>
-        <h4>CONTACT INFORMATION</h4>
-        <p><a href="mailto:example@example.com">Email: bida25-068@thuto.bac.ac.bw</a></p>
-        <p>Please note that this an advertisement website. We do not operate online. Contact us on 397 846, to place your order and come collect it physically.If you want your order delivered, the delivery fee is P50 around Gaborone. Thank you.</p>
+    <main>
+        <section class="contact-section">
+            <h1>These are our contact details. Contact Us for order or product enquires.</h1>
+            <div class="contact-container">
+                <div class="contact-image logo-card">
+                    <img src="images/logo.jpg.jpg" alt="Bakery Logo">
+                </div>
+                <div class="contact-info contact-card">
+                    <h2>Contact Us</h2>
+                    <p>We would love to hear from you!</p>
+                    <div class="info-item">
+                        <h2>Phone</h2>
+                        <p>+26776253839</p>
+                    </div>
+                    <div class="info-item">
+                        <h2>Email</h2>
+                        <p>saltedbutterbakery@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h2>Location</h2>
+                        <p>We are located in Tsholofelo East Plot number 456/K88</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy; Bakery Store🍰</p>
+    <footer class="footer text-center">
+        <h3>Operating Hours</h3>
+        <p>We operate during the week only, from 0800am to 1445pm. Please visit our store!</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const logoCard=document.querySelector(".logo-card");
+            const contactCard=document.querySelector(".contact-card");
+            setTimeout(() => {
+                logoCard.classList.add("animate-in");
+                contactCard.classList.add("animate-in");
+            },200);
+        });
+    </script>
 </body>
 </html>
