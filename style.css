@@ -498,7 +498,6 @@ nav, header {
   background-color: #1a0e05;
   padding: 16px 60px;
   border-radius: 6px;
-  text-align: center;
 }
 .confirmation p {
   color: #f5e6d0;
@@ -517,7 +516,7 @@ nav, header {
   font-size: 15px;
   color: #5a3e28;
   text-align: center;
-  margin-top: 8px;
+  margin-top: 8px;;
 }
 body {
   background-color: #f5e6d0;
